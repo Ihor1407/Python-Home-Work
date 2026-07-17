@@ -39,8 +39,7 @@ class Group:
         for student in self.group:
             if student.last_name == last_name:
                 return student
-            else:
-                return None
+        return None
 
     def __str__(self):
         all_students = "\n".join(str(student) for student in self.group)
